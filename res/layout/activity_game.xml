@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                <View
+                        android:layout_weight="0.8"
+                        android:layout_height="50dip"
+                        android:layout_width="0px"
+                        />
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                        android:layout_weight="0.2"
+                        android:layout_height="50dip"
+                        android:layout_width="0px"
+                        android:id="@id/fragment_menu_and_share"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="0px"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
+                        android:id="@+id/top_space_holder"
+                        android:visibility="gone"
+                        />
+
+                <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/next_puzzle_progress_bar"
+                        android:visibility="gone"
+                        />
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="0.5"
+                        android:id="@+id/bottom_space_holder"
+                        android:visibility="gone"
+                        />
+
+                <com.softevol.appsystemimpl.view.GameView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:id="@+id/game_view"
+                        />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+</LinearLayout>

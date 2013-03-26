@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="back_and_exit_button_width">70dip</dimen>
+    <dimen name="back_and_exit_button_height">50dip</dimen>
+
+    <dimen name="buy_more_credits_button_size">30dip</dimen>
+    <dimen name="credits_value_text_size">9sp</dimen>
+
+    <dimen name="username_text_size">14sp</dimen>
+    <dimen name="username_letter_size">12dip</dimen>
+
+    <dimen name="menu_and_share_layout_width">70dip</dimen>
+    <dimen name="menu_and_share_layout_height">35dip</dimen>
+
+    <dimen name="tab_width">65px</dimen>
+    <dimen name="tabs_bottom_line_height">15px</dimen>
+    <dimen name="tabs_item_layout_padding">4dip</dimen>
+    <dimen name="tabs_item_text_view_padding">5dip</dimen>
+    <dimen name="tabs_layout_height">60dip</dimen>
+    <dimen name="tabs_text_size">13sp</dimen>
+    <dimen name="tabs_margin">5px</dimen>
+    <dimen name="puzzles_list_view_title_text_size">14sp</dimen>
+
+    <dimen name="navigation_menu_layout_width">200dip</dimen>
+    <dimen name="navigation_menu_layout_height">50dip</dimen>
+
+    <dimen name="navigation_bar_custom_menu_button_width">35dip</dimen>
+    <dimen name="navigation_bar_custom_menu_button_height">25dip</dimen>
+
+</resources>

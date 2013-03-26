@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_blue">#FF34699D</color>
+    <color name="main_green">#FF099512</color>
+    <color name="main_red">#FFBD0B23</color>
+    <color name="main_background">#ffebebeb</color>
+
+    <color name="puzzle_name">#9c9c9c</color>
+    <color name="puzzle_name_selected">#00944a</color>
+</resources>

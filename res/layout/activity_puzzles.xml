@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tabs_layout_height"
+                    android:orientation="horizontal"
+                    >
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
+                        android:layout_height="@dimen/tabs_layout_height"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tabs_fragment"
+                        />
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                        android:layout_height="@dimen/menu_and_share_layout_height"
+                        android:layout_width="@dimen/menu_and_share_layout_width"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@id/fragment_menu_and_share"
+                        />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_height="0px"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dip"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                    <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.40"
+                            android:text="Name"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/main_blue"
+                            android:textSize="@dimen/puzzles_list_view_title_text_size"
+                            />
+
+                    <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.40"
+                            android:text="Date"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/main_blue"
+                            android:textSize="@dimen/puzzles_list_view_title_text_size"
+                            />
+
+                    <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:text="Autosolve"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/main_blue"
+                            android:textSize="@dimen/puzzles_list_view_title_text_size"
+                            />
+
+                </LinearLayout>
+
+                <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:id="@+id/created_puzzles_list_view"
+                        android:text="Created"
+                        android:divider="@color/main_background"
+                        />
+
+                <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:id="@+id/imported_puzzles_list_view"
+                        android:text="Imported"
+                        android:visibility="gone"
+                        android:divider="@color/main_background"
+                        />
+
+                <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:id="@+id/buy_puzzles_list_view"
+                        android:text="Buy"
+                        android:visibility="gone"
+                        android:divider="@color/main_background"
+                        />
+
+                <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:id="@+id/all_puzzles_list_view"
+                        android:text="All"
+                        android:visibility="gone"
+                        android:divider="@color/main_background"
+                        />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+</LinearLayout>

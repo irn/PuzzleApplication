@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="back_and_exit_button_width">70dip</dimen>
+    <dimen name="back_and_exit_button_height">50dip</dimen>
+
+    <dimen name="buy_more_credits_button_size">40dip</dimen>
+    <dimen name="credits_value_text_size">13sp</dimen>
+
+    <dimen name="username_text_size">16sp</dimen>
+    <dimen name="username_letter_size">14dip</dimen>
+
+    <dimen name="menu_and_share_layout_width">110dip</dimen>
+    <dimen name="menu_and_share_layout_height">60dip</dimen>
+
+    <dimen name="tab_width">180px</dimen>
+    <dimen name="tabs_bottom_line_height">29px</dimen>
+    <dimen name="tabs_item_layout_padding">5dip</dimen>
+    <dimen name="tabs_item_text_view_padding">2dip</dimen>
+    <dimen name="tabs_layout_height">80dip</dimen>
+    <dimen name="tabs_text_size">9sp</dimen>
+    <dimen name="tabs_margin">10px</dimen>
+    <dimen name="puzzles_list_view_title_text_size">18sp</dimen>
+
+    <dimen name="navigation_menu_layout_width">200dip</dimen>
+    <dimen name="navigation_menu_layout_height">50dip</dimen>
+
+    <dimen name="navigation_bar_custom_menu_button_width">35dip</dimen>
+    <dimen name="navigation_bar_custom_menu_button_height">33dip</dimen>
+
+    <dimen name="home_button_size">100dip</dimen>
+    <dimen name="home_buttons_margin">10dip</dimen>
+    <dimen name="home_buttons_margin_center">5dip</dimen>
+
+    <dimen name="main_padding_right">10dip</dimen>
+
+    <dimen name="tab_content_main_main_button_size">87dip</dimen>
+
+    <dimen name="tab_content_about_game_info_icon_size">40dip</dimen>
+    <dimen name="tab_content_about_game_info_padding">10dip</dimen>
+    <dimen name="tab_content_about_game_info_text_size">16sp</dimen>
+
+    <dimen name="activity_options_option_image_size">100dip</dimen>
+    <dimen name="activity_options_option_margin_left">20dip</dimen>
+    <dimen name="activity_options_option_margin_center">15dip</dimen>
+    <dimen name="activity_options_option_margin_right">35dip</dimen>
+
+    <dimen name="activity_options_custom_menu_button_size">35dip</dimen>
+
+    <dimen name="activity_edit_profile_buttons_width">100dip</dimen>
+    <dimen name="activity_edit_profile_buttons_separator_width">30dip</dimen>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.softevol.appsystemimpl"
+        android:versionCode="1"
+        android:versionName="1.0"
+        >
+
+    <uses-sdk
+            android:minSdkVersion="10"
+            android:targetSdkVersion="17"
+            />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/AppBaseTheme"
+            android:name=".AppSystemImplApplication"
+            >
+        <activity
+                android:name=".activity.HomeActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.AboutActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.BuyCreditsActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.EditProfileActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.GameActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.HighScoreActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.MainActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.NewsActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.OptionsActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.PuzzlesActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.PuzzleSettingsActivity" android:screenOrientation="landscape" />
+        <activity android:name=".activity.SelectProfileActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustNothing" />
+
+        <provider
+                android:name=".data.PuzzlesContentProvider"
+                android:authorities="com.softevol.appsystemimpl.data">
+        </provider>
+    </application>
+</manifest>

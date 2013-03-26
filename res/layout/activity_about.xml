@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tabs_layout_height"
+                    android:orientation="horizontal"
+                    >
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
+                        android:layout_height="@dimen/tabs_layout_height"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tabs_fragment"
+                        />
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                        android:layout_height="@dimen/menu_and_share_layout_height"
+                        android:layout_width="@dimen/menu_and_share_layout_width"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@id/fragment_menu_and_share"
+                        />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_height="0px"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dip"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/about_game_info_root_layout"
+                        >
+
+                    <include layout="@layout/tab_content_about_game_info" />
+
+                </LinearLayout>
+
+                <WebView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/about_game_credits_layout"
+                        android:visibility="gone"
+                        />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+</LinearLayout>

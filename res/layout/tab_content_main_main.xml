@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="1px"
+            />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleOpenPuzzles"
+                android:background="@android:color/transparent"
+                android:src="@drawable/button_start"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleCreatePuzzle"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab_content_main_main_create"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleSharePuzzle"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab_content_main_main_share"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleDownloadPuzzles"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab_content_main_main_share"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleBuyPuzzles"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab_content_main_main_buy"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+        <ImageButton
+                android:layout_width="@dimen/tab_content_main_main_button_size"
+                android:layout_height="@dimen/tab_content_main_main_button_size"
+                android:scaleType="fitXY"
+                android:onClick="handleLogout"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab_content_main_main_logout"
+                />
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="1px"
+                />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            />
+
+</LinearLayout>

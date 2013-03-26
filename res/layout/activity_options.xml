@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tabs_layout_height"
+                    android:orientation="horizontal"
+                    >
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
+                        android:layout_height="@dimen/tabs_layout_height"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tabs_fragment"
+                        />
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                        android:layout_height="@dimen/menu_and_share_layout_height"
+                        android:layout_width="@dimen/menu_and_share_layout_width"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@id/fragment_menu_and_share"
+                        />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_height="0px"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dip"
+                    >
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        />
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <ImageView
+                            android:layout_width="@dimen/activity_options_option_image_size"
+                            android:layout_height="@dimen/activity_options_option_image_size"
+                            android:background="#F00"
+                            />
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <ImageView
+                            android:layout_width="@dimen/activity_options_option_image_size"
+                            android:layout_height="@dimen/activity_options_option_image_size"
+                            android:background="#F00"
+                            />
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <ImageView
+                            android:layout_width="@dimen/activity_options_option_image_size"
+                            android:layout_height="@dimen/activity_options_option_image_size"
+                            android:background="#F00"
+                            />
+
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        />
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_options_option_margin_left"
+                            />
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_options_option_margin_center"
+                            />
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_options_option_margin_right"
+                            />
+
+
+                    <View
+                            android:layout_width="0px"
+                            android:layout_height="1px"
+                            android:layout_weight="1"
+                            />
+
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+</LinearLayout>

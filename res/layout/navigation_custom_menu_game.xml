@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dip"
+        android:background="@color/main_background"
+        >
+
+    <ImageButton
+            android:layout_width="@dimen/navigation_bar_custom_menu_button_width"
+            android:layout_height="@dimen/navigation_bar_custom_menu_button_height"
+            android:id="@+id/next_image_button"
+            android:src="@drawable/custom_menu_play"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_button"
+            android:src="@drawable/back_button"
+            android:background="@android:color/transparent"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            />
+
+    <LinearLayout
+        android:layout_width="@dimen/navigation_menu_layout_width"
+        android:layout_height="@dimen/navigation_menu_layout_height"
+        android:id="@+id/menu_layout"
+        android:layout_toLeftOf="@id/navigation_exit_button"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@id/navigation_exit_button"
+            android:src="@drawable/exit_button"
+            android:background="@android:color/transparent"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="@dimen/main_padding_right"
+            />
+
+</RelativeLayout>

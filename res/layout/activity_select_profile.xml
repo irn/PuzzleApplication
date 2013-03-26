@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tabs_layout_height"
+                    android:orientation="horizontal"
+                    >
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
+                        android:layout_height="@dimen/tabs_layout_height"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tabs_fragment"
+                        />
+
+                <fragment
+                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                        android:layout_height="@dimen/menu_and_share_layout_height"
+                        android:layout_width="@dimen/menu_and_share_layout_width"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@id/fragment_menu_and_share"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    >
+
+                <ScrollView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="30dip"
+                            android:paddingRight="30dip"
+                            >
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LOGIN"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/main_blue"/>
+
+                            <EditText
+                                    android:layout_width="@dimen/profile_edittext_width"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="guest659"
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PASSWORD"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <EditText
+                                    android:layout_width="@dimen/profile_edittext_width"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="XXX"
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EMAIL"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <EditText
+                                    android:layout_width="@dimen/profile_edittext_width"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NICK"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/main_blue"
+                                    />
+
+                            <EditText
+                                    android:layout_width="@dimen/profile_edittext_width"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/main_blue"
+                                    android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                                android:layout_width="300dip"
+                                android:layout_height="wrap_content"
+                                >
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ID16847623"
+                                    android:textColor="@color/main_blue"
+                                    android:textStyle="bold"
+                                    />
+
+                            <View
+                                    android:layout_weight="1"
+                                    android:layout_height="1px"
+                                    android:layout_width="0px"
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:text="Level 3/3"
+                                    android:textColor="@color/main_blue"
+                                    android:textStyle="bold"
+                                    android:paddingRight="10dip"
+                                    />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                        android:layout_width="@dimen/profile_loginbutton_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="LOGIN"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:background="@color/main_blue"
+                        android:layout_alignParentBottom="true"
+                        android:paddingTop="5dip"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip"
+                        android:layout_marginTop="10dip"
+                        android:clickable="true"
+                        android:onClick="handleLogin"
+                        android:gravity="center"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+</LinearLayout>

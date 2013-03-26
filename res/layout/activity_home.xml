@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.NewsFeedFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.8"
+                android:layout_height="50dip"
+                />
+
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                android:layout_width="0px"
+                android:layout_weight="0.2"
+                android:layout_height="70dip"
+                android:id="@id/fragment_menu_and_share"
+                />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                >
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleOpenMain"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_start"
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleOpenOptions"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_options"
+                    android:layout_marginLeft="@dimen/home_buttons_margin"
+                    android:layout_marginRight="@dimen/home_buttons_margin_center"
+                    />
+
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleOpenScores"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_scores"
+                    android:layout_marginLeft="@dimen/home_buttons_margin_center"
+                    android:layout_marginRight="@dimen/home_buttons_margin_center"
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleOpenNews"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_news"
+                    android:layout_marginLeft="@dimen/home_buttons_margin_center"
+                    android:layout_marginRight="@dimen/home_buttons_margin"
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleOpenAbout"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/button_about_us"
+                    android:layout_marginLeft="@dimen/home_buttons_margin_center"
+                    />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <fragment
+            android:name="com.softevol.appsystemimpl.fragment.NavigationFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigation_fragment"
+            />
+
+</LinearLayout>
