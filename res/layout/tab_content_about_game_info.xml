@@ -7,102 +7,18 @@
         android:layout_height="fill_parent"
         >
 
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
+    <TextView
+            style="@style/style_items_text_about"
+            android:text="Select"
+            android:drawableLeft="@drawable/select_rounded"
             />
-
-    <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-        <ImageView
-                android:layout_width="@dimen/tab_content_about_game_info_icon_size"
-                android:layout_height="@dimen/tab_content_about_game_info_icon_size"
-                android:background="#F00"
-                />
-
-        <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/main_blue"
-                android:layout_gravity="center_vertical"
-                android:text="Select"
-                android:layout_marginLeft="@dimen/tab_content_about_game_info_padding"
-                android:textSize="@dimen/tab_content_about_game_info_text_size"
-                />
-
-    </LinearLayout>
-
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
+    <TextView
+            style="@style/style_items_text_about"
+            android:text="Autosolve puzzle"
             />
-
-    <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-
-        <ImageView
-                android:layout_width="@dimen/tab_content_about_game_info_icon_size"
-                android:layout_height="@dimen/tab_content_about_game_info_icon_size"
-                android:background="#F00"
-                />
-
-        <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/main_blue"
-                android:layout_gravity="center_vertical"
-                android:text="Autosolve puzzle"
-                android:layout_marginLeft="@dimen/tab_content_about_game_info_padding"
-                android:textSize="@dimen/tab_content_about_game_info_text_size"
-                />
-
-    </LinearLayout>
-
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
-            />
-
-    <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-
-        <ImageView
-                android:layout_width="@dimen/tab_content_about_game_info_icon_size"
-                android:layout_height="@dimen/tab_content_about_game_info_icon_size"
-                android:background="#F00"
-                />
-
-        <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/main_blue"
-                android:layout_gravity="center_vertical"
-                android:text="Share puzzle with friends"
-                android:layout_marginLeft="@dimen/tab_content_about_game_info_padding"
-                android:textSize="@dimen/tab_content_about_game_info_text_size"
-                />
-
-    </LinearLayout>
-
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
+    <TextView
+            style="@style/style_items_text_about"
+            android:text="Share puzzle with friends"
             />
 
 </LinearLayout>

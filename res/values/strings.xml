@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">App System Implementation</string>
+    <string name="app_name">Puzzle application</string>
+
+    <!-- tabs about screen -->
+    <string name="tab_game_info">GAME INFO</string>
+    <string name="tab_credits">CREDITS</string>
 </resources>

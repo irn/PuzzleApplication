@@ -46,11 +46,11 @@ public class AboutActivity extends BaseActivity implements TabsFragment.OnTabCha
         tabsFragment.clearTabs();
         tabsFragment.setOnTabChangedListener(this);
 
-        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, "Game Info");
+        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, getString(R.string.tab_game_info));
         createdTabView.setId(TAB_GAME_INFO);
         tabsFragment.addTab(createdTabView);
 
-        TabsFragment.TabView importedTabView = new TabsFragment.TabView(this, "Credits");
+        TabsFragment.TabView importedTabView = new TabsFragment.TabView(this, getString(R.string.tab_credits));
         importedTabView.setId(TAB_CREDITS);
         tabsFragment.addTab(importedTabView);
     }

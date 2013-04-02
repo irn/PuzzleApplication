@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar" />
+
+    <style name="style_items_text_about">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0.33</item>
+        <item name="android:layout_marginLeft">@dimen/tab_content_about_game_info_padding</item>
+        <item name="android:drawablePadding">80dp</item>
+        <item name="android:textColor">@color/main_blue</item>
+        <!--<item name="android:textSize">@dimen/tab_content_about_game_info_text_size</item>-->
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
 </resources>
