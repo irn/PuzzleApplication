@@ -41,7 +41,7 @@ public class OptionsActivity extends BaseActivity {
         TabsFragment tabsFragment = (TabsFragment) getSupportFragmentManager().findFragmentById(R.id.tabs_fragment);
         tabsFragment.clearTabs();
 
-        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, "Options");
+        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, getString(R.string.tab_options));
         createdTabView.setId(TAB_OPTIONS);
         tabsFragment.addTab(createdTabView);
 

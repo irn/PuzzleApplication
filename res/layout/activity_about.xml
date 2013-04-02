@@ -18,7 +18,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/tabs_layout_height"
-                android:paddingLeft="5dp"
+                android:paddingLeft="@dimen/frame_top_left_margin"
                 >
 
             <fragment

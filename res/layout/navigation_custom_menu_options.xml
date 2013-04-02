@@ -8,13 +8,12 @@
         >
 
     <ImageButton
-        android:layout_width="@dimen/activity_options_custom_menu_button_size"
-        android:layout_height="@dimen/activity_options_custom_menu_button_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@android:color/transparent"
-        android:src="@drawable/activity_options_save"
+        android:src="@drawable/save_green"
         android:id="@+id/save_button"
-        android:scaleType="fitXY"
         />
 
 </RelativeLayout>

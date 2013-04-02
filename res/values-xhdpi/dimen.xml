@@ -40,7 +40,7 @@
     <dimen name="tab_content_about_game_info_text_size">16sp</dimen>
 
     <dimen name="activity_options_option_image_size">100dip</dimen>
-    <dimen name="activity_options_option_margin_left">20dip</dimen>
+    <dimen name="activity_options_option_margin_left">50dip</dimen>
     <dimen name="activity_options_option_margin_center">15dip</dimen>
     <dimen name="activity_options_option_margin_right">35dip</dimen>
 
@@ -48,4 +48,6 @@
 
     <dimen name="activity_edit_profile_buttons_width">100dip</dimen>
     <dimen name="activity_edit_profile_buttons_separator_width">30dip</dimen>
+
+    <dimen name="frame_top_left_margin">5dp</dimen>
 </resources>

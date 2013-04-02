@@ -10,181 +10,124 @@
 
     <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
-            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
             >
 
-        <fragment
-                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
-                android:layout_width="0px"
-                android:layout_weight="0.2"
-                android:layout_height="fill_parent"
-                />
-
-        <LinearLayout
-                android:layout_width="0px"
-                android:layout_weight="0.8"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tabs_layout_height"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/frame_top_left_margin"
                 >
 
-            <RelativeLayout
-                    android:layout_width="fill_parent"
+            <fragment
+                    android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
                     android:layout_height="@dimen/tabs_layout_height"
-                    android:orientation="horizontal"
-                    >
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/tabs_fragment"
+                    />
 
-                <fragment
-                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
-                        android:layout_height="@dimen/tabs_layout_height"
-                        android:layout_width="fill_parent"
-                        android:layout_alignParentTop="true"
-                        android:id="@+id/tabs_fragment"
-                        />
+            <fragment
+                    android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                    android:layout_height="@dimen/menu_and_share_layout_height"
+                    android:layout_width="@dimen/menu_and_share_layout_width"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@id/fragment_menu_and_share"
+                    />
 
-                <fragment
-                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
-                        android:layout_height="@dimen/menu_and_share_layout_height"
-                        android:layout_width="@dimen/menu_and_share_layout_width"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentTop="true"
-                        android:id="@id/fragment_menu_and_share"
-                        />
+        </RelativeLayout>
 
-            </RelativeLayout>
+        <LinearLayout
+                android:layout_height="0px"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dip"
+                >
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    />
 
             <LinearLayout
-                    android:layout_height="0px"
                     android:layout_width="fill_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="10dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
                     >
 
-                <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="0px"
-                        android:layout_weight="1"
-                        />
-
                 <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        >
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.33"
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
 
                     <ImageView
-                            android:layout_width="@dimen/activity_options_option_image_size"
-                            android:layout_height="@dimen/activity_options_option_image_size"
-                            android:background="#F00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_music"
                             />
 
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             />
-
-                    <ImageView
-                            android:layout_width="@dimen/activity_options_option_image_size"
-                            android:layout_height="@dimen/activity_options_option_image_size"
-                            android:background="#F00"
-                            />
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
-
-                    <ImageView
-                            android:layout_width="@dimen/activity_options_option_image_size"
-                            android:layout_height="@dimen/activity_options_option_image_size"
-                            android:background="#F00"
-                            />
-
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
-
-
                 </LinearLayout>
 
-                <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="0px"
-                        android:layout_weight="1"
-                        />
-
                 <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        >
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.33"
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
 
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_sound"
                             />
 
                     <CheckBox
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="@dimen/activity_options_option_margin_left"
                             />
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
-
-                    <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/activity_options_option_margin_center"
-                            />
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
-
-                    <CheckBox
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/activity_options_option_margin_right"
-                            />
-
-
-                    <View
-                            android:layout_width="0px"
-                            android:layout_height="1px"
-                            android:layout_weight="1"
-                            />
-
-
                 </LinearLayout>
 
-                <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="0px"
-                        android:layout_weight="1"
-                        />
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.33"
+                        android:layout_height="fill_parent"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_vibration"
+                            />
+
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                </LinearLayout>
+
 
             </LinearLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    />
+
         </LinearLayout>
     </LinearLayout>
 

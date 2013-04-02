@@ -5,4 +5,5 @@
     <!-- tabs about screen -->
     <string name="tab_game_info">GAME INFO</string>
     <string name="tab_credits">CREDITS</string>
+    <string name="tab_options">OPTIONS</string>
 </resources>

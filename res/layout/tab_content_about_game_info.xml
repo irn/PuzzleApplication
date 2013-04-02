@@ -15,10 +15,12 @@
     <TextView
             style="@style/style_items_text_about"
             android:text="Autosolve puzzle"
+            android:drawableLeft="@drawable/resolve"
             />
     <TextView
             style="@style/style_items_text_about"
             android:text="Share puzzle with friends"
+            android:drawableLeft="@drawable/share_about"
             />
 
 </LinearLayout>
