@@ -3,10 +3,11 @@ package com.softevol.appsystemimpl.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ListView;
 import com.softevol.appsystemimpl.R;
+import com.softevol.appsystemimpl.adapter.HighScoreAdapter;
 import com.softevol.appsystemimpl.fragment.TabsFragment;
+import com.softevol.appsystemimpl.model.ScoresModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,8 @@ public class HighScoreActivity extends BaseActivity implements TabsFragment.OnTa
     private static final int TAB_4X4 = 3;
     private static final int TAB_5X5 = 4;
 
+    private ListView mScoreListView;
+
     public static void launch(Context context) {
         launch(context, null);
     }
@@ -38,10 +41,11 @@ public class HighScoreActivity extends BaseActivity implements TabsFragment.OnTa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_high_scores);
 
-        mTabsContent.add(findViewById(R.id.scores_tab_content_all));
-        mTabsContent.add(findViewById(R.id.scores_tab_content_3x3));
-        mTabsContent.add(findViewById(R.id.scores_tab_content_4x4));
-        mTabsContent.add(findViewById(R.id.scores_tab_content_5x5));
+        mScoreListView = (ListView) findViewById(R.id.listViewScore);
+        mTabsContent.add(mScoreListView);
+//        mTabsContent.add(findViewById(R.id.scores_tab_content_3x3));
+//        mTabsContent.add(findViewById(R.id.scores_tab_content_4x4));
+//        mTabsContent.add(findViewById(R.id.scores_tab_content_5x5));
 
 
     }
@@ -73,9 +77,14 @@ public class HighScoreActivity extends BaseActivity implements TabsFragment.OnTa
 
     @Override
     public void onTabChanged(TabsFragment.TabView prevActiveTab, TabsFragment.TabView newActiveTab) {
-        mTabsContent.get(prevActiveTab.getId() - 1).setVisibility(View.GONE);
-        mTabsContent.get(newActiveTab.getId() - 1).setVisibility(View.VISIBLE);
+        ListView view = mTabsContent.get(0);
+        List<ScoresModel> scoresModelList = new ArrayList<ScoresModel>();
+        scoresModelList.add(new ScoresModel());
+        HighScoreAdapter scoreAdapter = new HighScoreAdapter(this, R.layout.item_high_score, scoresModelList);
+        view.setAdapter(scoreAdapter);
+//        mTabsContent.get(prevActiveTab.getId() - 1).setVisibility(View.GONE);
+//        mTabsContent.get(newActiveTab.getId() - 1).setVisibility(View.VISIBLE);
     }
 
-    private List<View> mTabsContent = new ArrayList<View>();
+    private List<ListView> mTabsContent = new ArrayList<ListView>();
 }

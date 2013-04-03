@@ -16,10 +16,7 @@
             >
 
         <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/tabs_layout_height"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/frame_top_left_margin"
+                style="@style/style_top_tabs"
                 >
 
             <fragment
@@ -70,10 +67,8 @@
                         android:gravity="center">
 
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:src="@drawable/ic_music"
-                            />
+                            style="@style/style_images_options"/>
 
                     <CheckBox
                             android:layout_width="wrap_content"
@@ -89,10 +84,8 @@
                         android:gravity="center">
 
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:src="@drawable/ic_sound"
-                            />
+                            style="@style/style_images_options"/>
 
                     <CheckBox
                             android:layout_width="wrap_content"
@@ -108,10 +101,8 @@
                         android:gravity="center">
 
                     <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:src="@drawable/ic_vibration"
-                            />
+                            style="@style/style_images_options"/>
 
                     <CheckBox
                             android:layout_width="wrap_content"

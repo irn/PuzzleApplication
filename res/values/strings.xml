@@ -6,4 +6,10 @@
     <string name="tab_game_info">GAME INFO</string>
     <string name="tab_credits">CREDITS</string>
     <string name="tab_options">OPTIONS</string>
+    <string name="tab_scores_all">ALL SCORES</string>
+    <string name="tab_scores_3">3/3</string>
+    <string name="tab_scores_4">4/4</string>
+    <string name="tab_scores_5">5/5</string>
+    <string name="tab_scores_6">6/6</string>
+    <string name="tab_scores_7">7/7</string>
 </resources>

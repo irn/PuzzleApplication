@@ -30,10 +30,9 @@
                 >
 
             <ImageButton
-                    android:layout_width="25dip"
-                    android:layout_height="25dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
                     android:src="@drawable/ic_facebook"
                     android:layout_gravity="right"
                     android:layout_toLeftOf="@id/share_twitter_button"
@@ -43,10 +42,9 @@
             <ImageButton
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="5dip"
-                    android:layout_width="25dip"
-                    android:layout_height="25dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
                     android:src="@drawable/ic_twitter"
                     android:id="@id/share_twitter_button"
                     />

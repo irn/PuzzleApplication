@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:gravity="center_vertical">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_puzzle"
+            android:layout_marginLeft="10dip"/>
+
+    <TextView
+            android:layout_marginLeft="10dip"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/main_blue"
+            android:text="1"
+            android:id="@+id/score_view_number"/>
+
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="user124125412"
+            android:id="@+id/score_view_name"/>
+
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="3x3"
+            android:gravity="center"
+            android:id="@+id/score_view_difficulty"/>
+
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="12934"
+            android:gravity="center"
+            android:id="@+id/score_view_moves"/>
+
+    <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="00:00:20"
+            android:gravity="center"
+            android:id="@+id/score_view_time"/>
+
+</LinearLayout>

@@ -10,88 +10,38 @@
 
     <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
-            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
             >
 
-        <fragment
-                android:name="com.softevol.appsystemimpl.fragment.UserInfoFragment"
-                android:layout_width="0px"
-                android:layout_weight="0.2"
-                android:layout_height="fill_parent"
-                />
-
-        <LinearLayout
-                android:layout_width="0px"
-                android:layout_weight="0.8"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
+        <RelativeLayout
+                style="@style/style_top_tabs"
                 >
 
-            <RelativeLayout
-                    android:layout_width="fill_parent"
+            <fragment
+                    android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
                     android:layout_height="@dimen/tabs_layout_height"
-                    android:orientation="horizontal"
-                    >
-
-                <fragment
-                        android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
-                        android:layout_height="@dimen/tabs_layout_height"
-                        android:layout_width="fill_parent"
-                        android:layout_alignParentTop="true"
-                        android:id="@+id/tabs_fragment"
-                        />
-
-                <fragment
-                        android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
-                        android:layout_height="@dimen/menu_and_share_layout_height"
-                        android:layout_width="@dimen/menu_and_share_layout_width"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentTop="true"
-                        android:id="@id/fragment_menu_and_share"
-                        />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                    android:layout_height="0px"
                     android:layout_width="fill_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="10dip"
-                    >
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/tabs_fragment"
+                    />
 
-                <include
-                        layout="@layout/list_view_item_scores"
-                        android:id="@+id/scores_tab_content_all"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        />
+            <fragment
+                    android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+                    android:layout_height="@dimen/menu_and_share_layout_height"
+                    android:layout_width="@dimen/menu_and_share_layout_width"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@id/fragment_menu_and_share"
+                    />
 
-                <include
-                        layout="@layout/list_view_item_scores"
-                        android:id="@+id/scores_tab_content_3x3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        />
+        </RelativeLayout>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewScore"/>
 
-                <include
-                        layout="@layout/list_view_item_scores"
-                        android:id="@+id/scores_tab_content_4x4"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        />
-
-                <include
-                        layout="@layout/list_view_item_scores"
-                        android:id="@+id/scores_tab_content_5x5"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        />
-
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 
     <fragment
