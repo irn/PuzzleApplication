@@ -45,14 +45,16 @@
                 >
 
             <ImageButton
-                    style="@style/style_home_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="handleOpenMain"
                     android:background="@android:color/transparent"
                     android:src="@drawable/button_start"
                     />
 
             <ImageButton
-                    style="@style/style_home_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="handleOpenOptions"
                     android:background="@android:color/transparent"
                     android:src="@drawable/button_options"
@@ -62,7 +64,8 @@
 
 
             <ImageButton
-                    style="@style/style_home_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="handleOpenScores"
                     android:background="@android:color/transparent"
                     android:src="@drawable/button_scores"
@@ -71,7 +74,8 @@
                     />
 
             <ImageButton
-                    style="@style/style_home_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="handleOpenNews"
                     android:background="@android:color/transparent"
                     android:src="@drawable/button_news"
@@ -80,7 +84,8 @@
                     />
 
             <ImageButton
-                    style="@style/style_home_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="handleOpenAbout"
                     android:background="@android:color/transparent"
                     android:src="@drawable/button_about_us"

@@ -20,7 +20,7 @@
             android:name=".AppSystemImplApplication"
             >
         <activity
-                android:name=".activity.HomeActivity"
+                android:name=".activity.IntroActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="landscape"
                 >
@@ -30,6 +30,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activity.HomeActivity" android:screenOrientation="landscape" />
         <activity android:name=".activity.AboutActivity" android:screenOrientation="landscape" />
         <activity android:name=".activity.BuyCreditsActivity" android:screenOrientation="landscape" />
         <activity android:name=".activity.EditProfileActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustNothing" />
@@ -41,6 +42,8 @@
         <activity android:name=".activity.PuzzlesActivity" android:screenOrientation="landscape" />
         <activity android:name=".activity.PuzzleSettingsActivity" android:screenOrientation="landscape" />
         <activity android:name=".activity.SelectProfileActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.IntroSubActivity" android:configChanges="orientation|keyboardHidden" android:screenOrientation="landscape" />
+
 
         <provider
                 android:name=".data.PuzzlesContentProvider"

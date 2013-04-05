@@ -30,20 +30,22 @@
                 >
 
             <ImageButton
-                    style="@style/style_share_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic_facebook"
+                    android:src="@drawable/facebook"
                     android:layout_gravity="right"
                     android:layout_toLeftOf="@id/share_twitter_button"
                     android:id="@+id/share_facebook_button"
                     />
 
             <ImageButton
-                    style="@style/style_share_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="5dip"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic_twitter"
+                    android:src="@drawable/twitter"
                     android:id="@id/share_twitter_button"
                     />
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="20dp"
+        android:background="@drawable/selector_dialog_close_background">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_exit_text"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textColor="@color/main_blue"
+            android:textAppearance="?android:textAppearanceMedium"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+        <Button
+                style="@style/Button.Blue"
+                android:text="@android:string/cancel"
+                android:id="@+id/dialogButtonCancel"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="13dp"/>
+        <Button
+                style="@style/Button.Blue"
+                android:text="@android:string/ok"
+                android:id="@+id/dialogButtonOk"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="13dp"/>
+    </RelativeLayout>
+</LinearLayout>

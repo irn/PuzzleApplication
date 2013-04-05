@@ -29,4 +29,6 @@
 
     <dimen name="profile_edittext_width">200dp</dimen>
     <dimen name="profile_loginbutton_width">150dp</dimen>
+
+    <dimen name="button_corners">2dp</dimen>
 </resources>

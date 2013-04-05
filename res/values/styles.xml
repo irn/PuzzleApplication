@@ -26,4 +26,44 @@
         <item name="android:layout_height">@dimen/tabs_layout_height</item>
         <item name="android:paddingLeft">@dimen/frame_top_left_margin</item>
     </style>
+
+    <style name="style_home_buttons">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="style_navigation_buttons">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="style_share_buttons">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Button.Blue">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/selector_button_blue</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">120dp</item>
+    </style>
+
+    <style name="style_dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="theme_close_dialog" parent="android:Theme.Dialog"/>
 </resources>
