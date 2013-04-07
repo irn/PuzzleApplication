@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <fragment
+            android:id="@+id/fragment_news_header"
+            android:name="com.softevol.appsystemimpl.fragment.NewsFeedFragment"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    <fragment android:id="@+id/fragment_menu_and_share"
+              android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/menu_and_share_layout_height"/>
+
+</LinearLayout>

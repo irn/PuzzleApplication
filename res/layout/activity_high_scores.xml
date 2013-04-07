@@ -29,7 +29,7 @@
 
             <fragment
                     android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
-                    android:layout_height="@dimen/menu_and_share_layout_height"
+                    android:layout_height="wrap_content"
                     android:layout_width="@dimen/menu_and_share_layout_width"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
