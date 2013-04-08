@@ -16,8 +16,8 @@
     </style>
 
     <style name="style_images_options">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/options_music_icons_size</item>
+        <item name="android:layout_width">@dimen/options_music_icons_size</item>
         <item name="android:paddingBottom">20dp</item>
     </style>
 

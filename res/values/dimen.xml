@@ -31,4 +31,8 @@
     <dimen name="profile_loginbutton_width">150dp</dimen>
 
     <dimen name="button_corners">2dp</dimen>
+    <dimen name="tabs_fragment_left_margin">10dp</dimen>
+
+    <!-- OPTIONS -->
+    <dimen name="options_music_icons_size">70dp</dimen>
 </resources>

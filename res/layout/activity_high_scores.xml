@@ -15,28 +15,18 @@
             android:orientation="vertical"
             >
 
-        <RelativeLayout
-                style="@style/style_top_tabs"
-                >
+        <include layout="@layout/item_news_share_header"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent" />
 
-            <fragment
-                    android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
-                    android:layout_height="@dimen/tabs_layout_height"
-                    android:layout_width="fill_parent"
-                    android:layout_alignParentTop="true"
-                    android:id="@+id/tabs_fragment"
-                    />
-
-            <fragment
-                    android:name="com.softevol.appsystemimpl.fragment.MenuAndShareFragment"
-                    android:layout_height="wrap_content"
-                    android:layout_width="@dimen/menu_and_share_layout_width"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:id="@id/fragment_menu_and_share"
-                    />
-
-        </RelativeLayout>
+        <fragment
+                android:name="com.softevol.appsystemimpl.fragment.TabsFragment"
+                android:layout_height="@dimen/tabs_layout_height"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/tabs_fragment_left_margin"
+                android:id="@+id/tabs_fragment"
+                />
         <ListView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

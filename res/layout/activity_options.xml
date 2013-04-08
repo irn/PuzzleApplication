@@ -16,7 +16,7 @@
             >
 
         <include layout="@layout/item_news_share_header"
-                 android:layout_height="@dimen/tabs_layout_height"
+                 android:layout_height="wrap_content"
                  android:layout_width="match_parent" />
 
         <fragment
@@ -24,6 +24,7 @@
                 android:layout_height="@dimen/tabs_layout_height"
                 android:layout_width="match_parent"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/tabs_fragment_left_margin"
                 android:id="@+id/tabs_fragment"
                 />
 
