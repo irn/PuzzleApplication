@@ -50,4 +50,5 @@
     <dimen name="activity_edit_profile_buttons_separator_width">30dip</dimen>
 
     <dimen name="frame_top_left_margin">5dp</dimen>
+    <dimen name="options_music_icons_size">100dp</dimen>
 </resources>

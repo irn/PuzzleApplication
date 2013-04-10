@@ -24,6 +24,7 @@
     <dimen name="navigation_menu_layout_width">300dip</dimen>
     <dimen name="navigation_menu_layout_height">80dip</dimen>
 
-    <dimen name="navigation_bar_custom_menu_button_width">35dip</dimen>
+    <dimen name="navigation_bar_custom_menu_button_width">84dip</dimen>
     <dimen name="navigation_bar_custom_menu_button_height">25dip</dimen>
+
 </resources>

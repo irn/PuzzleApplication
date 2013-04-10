@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/root_view"
-        android:background="@color/main_background"
-        >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background"
+    android:orientation="horizontal"
+    android:gravity="center">
 
-    <View
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/tabs_bottom_line_height"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/tabs_bottom_line"
-            android:layout_marginRight="@dimen/main_padding_right"
-            />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/arrow_left"
+            android:layout_marginRight="10dp"/>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/root_view"
 
-</RelativeLayout>
+            >
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tabs_bottom_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/tabs_bottom_line"
+                android:layout_marginRight="@dimen/main_padding_right"
+                android:id="@+id/view"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

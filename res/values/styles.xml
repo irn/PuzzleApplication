@@ -34,8 +34,8 @@
     </style>
 
     <style name="style_navigation_buttons">
-        <item name="android:layout_width">35dp</item>
-        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">@dimen/navigation_bar_custom_menu_button_width</item>
+        <item name="android:layout_height">@dimen/navigation_bar_custom_menu_button_width</item>
         <item name="android:scaleType">fitXY</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>

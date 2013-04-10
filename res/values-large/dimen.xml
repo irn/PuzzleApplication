@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_bar_custom_menu_button_width">84dip</dimen>
+
+    <!-- OPTIONS -->
+    <dimen name="options_music_icons_size">184dp</dimen>
+</resources>
