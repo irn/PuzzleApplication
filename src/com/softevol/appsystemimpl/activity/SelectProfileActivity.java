@@ -1,11 +1,9 @@
 package com.softevol.appsystemimpl.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import com.softevol.appsystemimpl.R;
 import com.softevol.appsystemimpl.fragment.TabsFragment;
 
@@ -45,7 +43,7 @@ public class SelectProfileActivity extends BaseActivity {
         TabsFragment tabsFragment = (TabsFragment) getSupportFragmentManager().findFragmentById(R.id.tabs_fragment);
         tabsFragment.clearTabs();
 
-        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, "Profile");
+        TabsFragment.TabView createdTabView = new TabsFragment.TabView(this, getString(R.string.tab_profile));
         createdTabView.setId(1);
         tabsFragment.addTab(createdTabView);
     }
